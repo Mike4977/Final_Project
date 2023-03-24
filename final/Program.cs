@@ -5,8 +5,8 @@ void PrintArray(string[] arrStr)
      Console.Write("[");
     for (int i = 0; i < arrStr.Length; i++)
     {
-         if (i < arrStr.Length - 1) Console.Write($"{arrStr[i]} ");
-		else Console.Write($"{arrStr[i]}");
+         if (i < arrStr.Length - 1) Console.Write($"\"{arrStr[i]}\", ");
+		else Console.Write($"\"{arrStr[i]}\"");
     }
     Console.Write("]");
 }
@@ -32,4 +32,5 @@ string[] ArrayElementLength(string[] arr)
 } 
 
 PrintArray(arrayStr);
+Console.Write(" -> ");
 PrintArray(ArrayElementLength(arrayStr));
